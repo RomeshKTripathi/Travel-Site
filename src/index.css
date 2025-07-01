@@ -14,7 +14,9 @@
     --color-link: #212832;
     --color-gray: #5e6282;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .link {
     @apply relative cursor-pointer;
 }
@@ -25,4 +27,14 @@
 
 .link:hover::after {
     @apply w-full; /* Use your "theme-teal" color here */
+}
+
+.card-effect {
+    @apply relative transition-all duration-200 cursor-pointer;
+}
+.card-effect::before {
+    @apply absolute content-[""]  transition-all duration-150  bottom-4 left-4  bg-theme-orange size-24 -z-10 rounded-tl-3xl;
+}
+.card-effect:hover::before {
+    @apply -bottom-6 -left-3;
 }
