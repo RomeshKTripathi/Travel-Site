@@ -4,6 +4,7 @@
 }
 @theme {
     --font-poppins: "poppins", sans-serif;
+    --font-volkhov: "volkhov", sans-serif;
     /* colors  */
     --color-theme-orange: #df6951;
     --color-theme-yellow: #ffc400;
@@ -12,4 +13,16 @@
     --color-large: #14183e;
     --color-link: #212832;
     --color-gray: #5e6282;
+}
+
+.link {
+    @apply relative cursor-pointer;
+}
+
+.link::after {
+    @apply content-[""] absolute left-0 bottom-1 w-0 h-0.5 bg-theme-orange transition-all duration-150;
+}
+
+.link:hover::after {
+    @apply w-full; /* Use your "theme-teal" color here */
 }
