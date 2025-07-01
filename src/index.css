@@ -1,0 +1,15 @@
+@import "tailwindcss";
+::-webkit-scrollbar {
+    display: none;
+}
+@theme {
+    --font-poppins: "poppins", sans-serif;
+    /* colors  */
+    --color-theme-orange: #df6951;
+    --color-theme-yellow: #ffc400;
+    --color-theme-cream: #fff1da;
+    --color-theme-teal: #006380;
+    --color-large: #14183e;
+    --color-link: #212832;
+    --color-gray: #5e6282;
+}
