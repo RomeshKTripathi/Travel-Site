@@ -11,9 +11,11 @@ const Header = () => {
             <div className="flex items-center gap-12 font-poppins text-sm">
                 <ul className="flex gap-12">
                     {links.map((link) => (
-                        <li className="z-10 link py-2 " key={link}>
-                            {link}
-                        </li>
+                        <a href={link.url}>
+                            <li className="z-10 link py-2 " key={link.id}>
+                                {link.title}
+                            </li>
+                        </a>
                     ))}
                 </ul>
                 <button className="px-4 py-1.5 border-2 border-gray rounded-lg">
