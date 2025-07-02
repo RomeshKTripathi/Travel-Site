@@ -4,7 +4,7 @@ import { cards } from "../constants";
 
 const Services = () => {
     return (
-        <div id="categories" className="mt-32 py-8">
+        <div id="categories" className="mt-18 py-12">
             <div>
                 <div className="text-gray uppercase text-center font-medium text-sm mb-2">
                     Category
@@ -34,7 +34,6 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            <div className="h-screen" />
         </div>
     );
 };
