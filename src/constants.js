@@ -3,11 +3,13 @@ import {
     BestFlights,
     Customization,
     europe,
+    india,
     LocalEvents,
     london,
     rome,
     weather,
 } from "./assets";
+import { Car, Location, Payment } from "./Components/Icons";
 
 export const links = [
     {
@@ -23,7 +25,7 @@ export const links = [
     {
         id: 3,
         title: "Bookings",
-        url: "#",
+        url: "#bookings",
     },
     {
         id: 4,
@@ -82,9 +84,40 @@ export const destinations = [
     },
     {
         id: 3,
+        trip: "India",
+        image: india,
+        price: "$28k",
+        desc: "40 days trip",
+    },
+    {
+        id: 4,
         trip: "Full Europe",
         image: europe,
         price: "$19k",
         desc: "28 days trip",
+    },
+];
+
+export const BookingSteps = [
+    {
+        id: 1,
+        Icon: Location,
+        title: "Choose Destination",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Urna tortor tempus.",
+        className: "bg-theme-orange",
+    },
+    {
+        id: 2,
+        Icon: Payment,
+        title: "Make Payment",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Urna tortor tempus.",
+        className: "bg-theme-yellow",
+    },
+    {
+        id: 3,
+        Icon: Car,
+        title: "Reach Airport on Selected Date",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Urna tortor tempus.",
+        className: "bg-theme-teal",
     },
 ];

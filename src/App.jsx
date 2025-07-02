@@ -5,6 +5,7 @@ import Hero from "./Components/Hero";
 import Services from "./Components/Services";
 import gsap from "gsap";
 import TopDestinations from "./Components/TopDestinations";
+import BookYourNextTrip from "./Components/BookYourNextTrip";
 
 const App = () => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
@@ -37,7 +38,7 @@ const App = () => {
         );
     });
     return (
-        <div className=" relative ">
+        <div className=" relative select-none bg-theme-cream/20">
             <div className="absolute -z-10 -top-24 right-0">
                 <img src={decor} alt="" />
                 <img
@@ -53,12 +54,12 @@ const App = () => {
                     alt="plane"
                 />
             </div>
-            <div className="px-20 relative ">
+            <div className="md:px-20 p-4 relative ">
                 <Header />
                 <Hero />
                 <Services />
                 <TopDestinations />
-                {/* BookYourNextTrip  */}
+                <BookYourNextTrip />
                 {/* Reviews  */}
                 {/* ContactUs  */}
                 {/* Footer  */}

@@ -3,14 +3,14 @@ import { traveller_model } from "../assets";
 const Hero = () => {
     return (
         <section id="home" className="relative w-full  ">
-            <main className="flex pt-20">
-                <div className="flex-1/2 items-center justify-center ">
+            <main className="lg:flex md:pt-10 pt-4 lg:pt-20">
+                <div className="lg:flex-1/2 items-center justify-center ">
                     <div className=" mt-20">
-                        <p className="text-theme-orange uppercase text-sm font-bold my-2">
+                        <p className="text-theme-orange uppercase text-xs md:text-sm font-bold my-2">
                             Welcome to Jadoo – Your Gateway to Unforgettable
                             Journeys
                         </p>
-                        <p className="text-6xl font-extrabold font-volkhov">
+                        <p className="text-5xl  md:text-6xl font-extrabold font-volkhov">
                             Travel, enjoy
                             <br />
                             and live a new
@@ -43,9 +43,9 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-1/2 ml-auto relative">
+                <div className="md:flex-1/2 md:ml-auto max-md:mt-12 relative">
                     <img
-                        className="z-10 w-5/6"
+                        className="z-10 md:w-5/6"
                         src={traveller_model}
                         alt="Traveller Model"
                     />

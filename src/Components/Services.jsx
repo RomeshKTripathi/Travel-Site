@@ -4,7 +4,7 @@ import { cards } from "../constants";
 
 const Services = () => {
     return (
-        <div id="categories" className="mt-18 py-12">
+        <div id="categories" className="md:mt-18 md:py-12 mt-12 pt-8">
             <div>
                 <div className="text-gray uppercase text-center font-medium text-sm mb-2">
                     Category
@@ -14,11 +14,11 @@ const Services = () => {
                 </div>
             </div>
             {/* Render cards  */}
-            <div className="card mt-24 flex gap-8 justify-center font-poppins">
+            <div className="card mt-24 md:flex gap-8 justify-center font-poppins">
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="w-64 flex flex-col card-effect bg-white shadow gap-3 p-4 rounded-2xl justify-center"
+                        className="md:w-64 w-full max-md:mb-4 flex flex-col card-effect bg-white shadow gap-3 p-4 rounded-2xl justify-center"
                     >
                         <img
                             className="w-1/3 self-center"

@@ -9,6 +9,8 @@ import Customization from "./Customization.svg";
 import europe from "./europe.jpg";
 import london from "./london.jpg";
 import rome from "./rome.jpg";
+import FeatureBookings from "./FeatureBookings.png";
+import india from "./india.jpg";
 
 export {
     decor,
@@ -20,6 +22,8 @@ export {
     BestFlights,
     Customization,
     europe,
+    india,
     london,
     rome,
+    FeatureBookings,
 };

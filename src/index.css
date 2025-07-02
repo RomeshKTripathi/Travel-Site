@@ -13,6 +13,7 @@
     --color-large: #14183e;
     --color-link: #212832;
     --color-gray: #5e6282;
+    --color-theme-shadow: rgba(0, 140, 255, 0.466);
 }
 html {
     scroll-behavior: smooth;
@@ -37,4 +38,20 @@ html {
 }
 .card-effect:hover::before {
     @apply -bottom-6 -left-3;
+}
+
+.bg-glow {
+    @apply relative;
+}
+.bg-glow::after {
+    @apply absolute content-[""] top-1/8 right-2/5 -z-10;
+    box-shadow: 0 0 120px 100px var(--color-theme-shadow);
+}
+
+.hamburger span {
+    @apply block w-6 h-0.5 bg-large relative mt-1.25;
+}
+
+.hamburger:has(.open) span {
+    @apply mt-0;
 }

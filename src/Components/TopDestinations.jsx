@@ -3,10 +3,7 @@ import { destinations } from "../constants";
 
 const TopDestinations = () => {
     return (
-        <section
-            id="destinations"
-            className="mt-12 pt-12 bg-radial from-theme-yellow/50 via-transparent to-transparent"
-        >
+        <section id="destinations" className="md:mt-12 md:pt-12 mt-8 pt-8 ">
             <div>
                 <div className="text-gray uppercase text-center font-medium text-sm mb-2">
                     Top Selling
@@ -15,7 +12,7 @@ const TopDestinations = () => {
                     Top Destinations
                 </div>
             </div>
-            <div className="flex justify-center py-12 gap-12">
+            <div className="lg:justify-center overflow-x-auto w-full flex py-8 md:py-12 gap-4 md:gap-12">
                 {destinations.map((destination) => (
                     <DestinationCard key={destination.id} {...destination} />
                 ))}
@@ -26,9 +23,9 @@ const TopDestinations = () => {
 
 function DestinationCard({ trip, image, price, desc }) {
     return (
-        <div className="rounded-xl group w-64 shadow hover:shadow-2xl transition-shadow duration-200 overflow-hidden relative cursor-pointer">
+        <div className="rounded-xl  shrink-0 group w-64  mx-auto  shadow lg:hover:shadow-2xl transition-shadow duration-200 overflow-hidden relative cursor-pointer">
             <img
-                className="group-hover:scale-110 transition-transform duration-300"
+                className="lg:group-hover:scale-110 transition-transform duration-300"
                 src={image}
                 alt=""
             />
