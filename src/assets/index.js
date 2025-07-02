@@ -6,6 +6,9 @@ import LocalEvents from "./LocalEvents.svg";
 import Logo from "./Logo.svg";
 import BestFlights from "./BestFlights.svg";
 import Customization from "./Customization.svg";
+import europe from "./europe.jpg";
+import london from "./london.jpg";
+import rome from "./rome.jpg";
 
 export {
     decor,
@@ -16,4 +19,7 @@ export {
     Logo,
     BestFlights,
     Customization,
+    europe,
+    london,
+    rome,
 };
