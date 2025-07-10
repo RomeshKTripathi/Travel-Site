@@ -1,19 +1,18 @@
-import { FeatureBookings } from "../assets";
 import { BookingSteps } from "../constants";
-import { Location } from "./Icons";
+import UpcomingTrip from "./UpcomingTrip";
 
 const BookYourNextTrip = () => {
     return (
         <div
             id="bookings"
-            className="flex md:flex-row flex-col max-md:gap-16 gap-4 mt-16 pt-16"
+            className="flex md:flex-row flex-col max-md:gap-16 gap-4 md:mt-16 pt-16"
         >
             <div className="md:flex-1/2">
                 <div>
-                    <div className="text-gray uppercase font-medium text-sm mb-2">
+                    <div className="text-gray uppercase font-medium max-md:text-center text-sm mb-2">
                         Easy and fast
                     </div>
-                    <div className="text-large  font-bold font-volkhov md:text-5xl text-4xl ">
+                    <div className="text-large  font-bold font-volkhov md:text-5xl text-4xl max-md:text-center lagend-text">
                         Book Your next Trip
                         <br />
                         In 3 Easy steps.
@@ -23,14 +22,8 @@ const BookYourNextTrip = () => {
                     ))}
                 </div>
             </div>
-            <div className="md:flex-1/2  justify-center items-center ">
-                <div className="bg-glow ">
-                    <img
-                        className="max-md:scale-110"
-                        src={FeatureBookings}
-                        alt=""
-                    />
-                </div>
+            <div className="md:flex-1/2 ">
+                <UpcomingTrip />
             </div>
         </div>
     );
